@@ -26,7 +26,7 @@ This project is an admin panel for managing products, companies, and user authen
    - List of companies to list your products.
 
 ## Screenshots
-
+![Login Page](C:\Users\sonua\Pictures\Screenshots/Login)
 
 ## Setup
 1. Clone the repository.
