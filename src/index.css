@@ -1,13 +1,350 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Playfair+Display&display=swap');
+*{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+  font-family: 'PT Sans Narrow', sans-serif;;
+}
+/* html{
+  font-size: 70.5%;
+} */
+.form_container{
+  width: 80%;
+    padding: 5rem;
+    /* border: 2px solid black; */
+    height:fit-content;
+}
+.form_wrapper{
+ 
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form_input{
+  width: 80%;
+  height: 40px;
+  outline: none;
+  color:black;
+  padding:10px;
+  border-radius: 10px;
+border:2px solid ghostwhite;
+  font-size: 1rem;
+  background-color: #F1EFEF;
+}
+input::placeholder {
+  color:gray; /* Set the color of the placeholder text */
+   
+}
+textarea::placeholder{
+  color:gray;
+}
+
+.particle-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.menu{
+  list-style-type: none;
+}
+.menu_tabs{
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+.menu_tabs:hover{
+  border:2px solid   rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.addproduct_button{
+  height: 2rem;
+    width: 6rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px ;
+    cursor:pointer;
+}
+textarea{
+  outline: none;
+  color:black;
+  padding:10px;
+  border-radius: 10px;
+border:2px solid ghostwhite;
+  font-size: 1rem;
+  background-color: #F1EFEF;
+}
+#table:hover{
+box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 1rem;
+}
+/* .login_container{
+  border: 2px solid black;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+} */
+.login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+  /* border: 2px solid black; */
+  padding: 20px;
+}
+
+.login_container img {
+  width: 10%;
+  height: auto;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.login_container h3 {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+form {
+  width: 100%;
+  max-width: 300px; 
+  /* border:2px solid blackAdjust the maximum width as needed */
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form p {
+  margin-top: 15px;
+}
+
+
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+.signin-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-container img {
+  width: 20%;
+  height: auto;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.signin-form label {
+  margin-top: 10px;
+}
+
+.signin-form input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.signin-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+/* Add these styles in your CSS file or as inline styles */
+
+.home-container {
+  display: flex;
+}
+
+.home-stats {
+ display: flex;
+  margin-right: 20px;
+  padding: 10px;
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  justify-content: space-between;
+}
+.home-tabs{
+  margin-bottom: 10px;
+  border:2px solid black;
+  padding:10px;
+  width: 20%;
+  border-radius: 20px;
+  text-align: right;
+  margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-stats > div {
+  margin-bottom: 10px;
+}
+
+.home-table {
+  width: 100%;
+  /* border: 2px solid black; */
+  border-radius: 8px;
+}
+
+.home-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+#table {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#table th, #table td {
+  padding: 8px;
+  text-align: left;
+}
+
+#table th {
+  background-color: #f2f2f2;
+}
+
+#table img {
+  width: 50px;
+  height: 50px;
+}
+.barcode_button{
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 17px;
+  font-size: 1rem;
+  font-weight: bold
+}
+.barcode_button:hover{
+  background-color: #e0e0e0;
+}
+.product_added{
+  color: rgb(30, 212, 30);
+    border: 2px solid grey;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    position: relative;
+}
+/* styles.css */
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin-top: 8px;
+}
+
+.card button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width:762px)
+{
+  html{
+    font-size:"100%"
+  }
+  .login_container img{
+    width:25%;
+  }
+  
+  .menu_icon{
+    display: block;
+  }
+  html{
+    font-size: 80%;
+  }
 }
