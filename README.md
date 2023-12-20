@@ -25,9 +25,24 @@ This project is an admin panel for managing products, companies, and user authen
 4. **List Product:**
    - List of companies to list your products.
 
-## Screenshots
-![Login Page](C:\Users\sonua\Pictures\Screenshots/Login)
+## Components
+###Login 
+The Login page is used to log in the user with right credentials.
+![Login Page](./src/image/Login.png)
 
+###Sign 
+The sign Page is used to create the new account for the user
+![Sign Page](./src/image/Sign%20Page.png)
+
+##Home 
+The Home shows the dashboard , Product list ,total stocks,Revenue,total Product 
+![Home page](./src/image/Home%20Page.png)
+##Add Product 
+The product is used to add the product with image preview.
+![Add Product](./src/image/Add%20Product.png)
+##list Product
+The list product is used to list the product to other online site
+![list Product](./src/image/Listing%20Page.png)
 ## Setup
 1. Clone the repository.
 2. Install dependencies using `npm install`.
