@@ -80,7 +80,7 @@ const Nav = () => {
    <MenuIcon className="menuicon" style={{fontSize:"4rem",border:"2px solid black",zIndex:"9999"}} onClick={handleShow}/>
    </div>
       <div
-        className="showbar" style={{ display:show?"block":"none", width:show?"40%":"",background:"#F3EEEA",position:show?"absolute":"relative",height:show?"100vh":""}}
+        className="showbar" style={{ display:show?"block":"none",background:"#F3EEEA",position:show?"absolute":"relative",height:show?"100vh":""}}
       >
          <CloseIcon style={{    fontSize: "4rem",
     position: "absolute",
