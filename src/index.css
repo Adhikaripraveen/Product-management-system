@@ -5,9 +5,9 @@
   padding:0;
   font-family: 'PT Sans Narrow', sans-serif;;
 }
-/* html{
-  font-size: 70.5%;
-} */
+html{
+  font-size: 62.5%;
+}
 .form_container{
   width: 80%;
     padding: 5rem;
@@ -30,11 +30,11 @@
   padding:10px;
   border-radius: 10px;
 border:2px solid ghostwhite;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #F1EFEF;
 }
 input::placeholder {
-  color:gray; /* Set the color of the placeholder text */
+  color:gray; 
    
 }
 textarea::placeholder{
@@ -53,10 +53,10 @@ textarea::placeholder{
   list-style-type: none;
 }
 .menu_tabs{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -70,17 +70,17 @@ textarea::placeholder{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .addproduct_button{
-  height: 2rem;
-    width: 6rem;
-    font-size: 1rem;
+  width: 8rem;
+    font-size: 2rem;
     padding: 0.5rem;
     margin-top: 1rem;
     background: blue;
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 7px ;
-    cursor:pointer;
+    border-radius: 7px;
+    cursor: pointer;
+
 }
 textarea{
   outline: none;
@@ -88,7 +88,7 @@ textarea{
   padding:10px;
   border-radius: 10px;
 border:2px solid ghostwhite;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #F1EFEF;
 }
 #table:hover{
@@ -149,6 +149,7 @@ form button {
   cursor: pointer;
   border: none;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 form button:hover {
@@ -159,6 +160,10 @@ form p {
   margin-top: 15px;
 }
 
+.signinform_label{
+  font-size: 1.5rem;
+
+}
 
 
 /* body {
@@ -214,19 +219,20 @@ form p {
  display: flex;
   margin-right: 20px;
   padding: 10px;
-  /* border: 2px solid black; */
+
   border-radius: 8px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .home-tabs{
   margin-bottom: 10px;
   border:2px solid black;
   padding:10px;
+  flex-wrap:wrap;
   width: 20%;
   border-radius: 20px;
   text-align: right;
   margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -274,7 +280,7 @@ form p {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 17px;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold
 }
 .barcode_button:hover{
@@ -307,6 +313,9 @@ form p {
   width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+#home{
+  width:80%;
+}
 
 .card img {
   max-width: 100%;
@@ -331,20 +340,37 @@ form p {
 .card button:hover {
   background-color: #45a049;
 }
+.menuicon{
+  display: none !important;
+}
+#showicon{
+  width:20%;
+}
 
 @media (max-width:762px)
 {
   html{
-    font-size:"100%"
+    font-size:55.5%;
   }
   .login_container img{
     width:25%;
   }
-  
-  .menu_icon{
-    display: block;
+  .sidebar{
+    display: none;
   }
+  #showicon{
+    width:0%;
+  }
+  .menuicon{
+    display: block!important;
+  }
+#home{
+  width:100%
+}
+}
+@media(max-width:"462px")
+{
   html{
-    font-size: 80%;
+    font-size: 50.5%;
   }
 }

@@ -10,7 +10,7 @@ const Home = () => {
 	<div  className="home-container">
 		<Nav/>
 	  
-	  <div style={{width:"80%"}}  >
+	  <div id="home"   >
 		<div className="home-stats">
 		<div className='home-tabs'><span>{ProductData.length}</span> Total Produts</div>
 		<div  className='home-tabs'><span>{totalQuantity}</span>Stocks</div>
@@ -19,7 +19,7 @@ const Home = () => {
 		<div  className="home-table">
 		<table>
 <thead>
-  <tr>
+  <tr style={{fontSize:"1.5rem"}}>
 	<th>Image</th>
 	<th>Product Name</th>
 	<th>Product ID</th>
@@ -32,7 +32,7 @@ const Home = () => {
 <tbody>
   {ProductData.map((product) => (
      
-	  <tr id="table" key={product.id}  style={{ border: '1px solid #ddd', borderRadius: '8px',  }}>
+	  <tr id="table" key={product.id}  style={{ border: '1px solid #ddd', borderRadius: '8px', fontSize:"1.5rem" }}>
 	  <td>
 		<img src={product.image} alt={product.Productname} style={{ width: '50px', height: '50px' }} />
 	  </td>

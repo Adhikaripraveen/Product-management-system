@@ -12,9 +12,9 @@ const ListProduct = () => {
          {Companies.map((val, ind) => {
   return (
     <div className="card" key={ind}>
-      <img src={val.image} alt={val.name} />
-      <h3>{val.name}</h3>
-      <p>{val.about}</p>
+      <img  src={val.image} alt={val.name} />
+      <h3 style={{fontSize:"2rem"}}>{val.name}</h3>
+      <p style={{fontSize:"1.5rem"}}>{val.about}</p>
      <Link to={val.link} target="_blank"><button>List Product</button></Link> 
     </div>
   );

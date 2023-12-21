@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from "./Nav";
+import Nav from "./Nav";
 import CloseIcon from "@mui/icons-material/Close";
 import Barcode from "react-barcode";
 import ProductData from "../ProductData";
@@ -101,7 +101,7 @@ const AddProduct = () => {
   return (
     <>
       <div style={{ display: "flex" }}>
-        <Home />
+        <Nav />
 
         <div className="form_container">
           <h4 style={{ fontSize: "4rem", color: "#a39b9b91" }}>Add Product</h4>
@@ -119,11 +119,11 @@ const AddProduct = () => {
               />
             </p>
           )}
-          {error && <p style={{ color: "red" }}>Please fill all the fields</p>}
+          {error && <p style={{ color: "red",fontSize:"1.5rem"}}>Please fill all the fields</p>}
           <div className="form_wrapper">
             <label
               htmlFor="Productname"
-              style={{ fontSize: "1.5rem", color: "black" }}
+              style={{ fontSize: "2.5rem", color: "black" }}
             >
               Product Name
             </label>
@@ -137,7 +137,7 @@ const AddProduct = () => {
             />
           </div>
           <div className="form_wrapper">
-            <label htmlFor="id" style={{ fontSize: "1.5rem", color: "black" }}>
+            <label htmlFor="id" style={{ fontSize: "2.5rem", color: "black" }}>
               Product ID
             </label>
             <input
@@ -152,7 +152,7 @@ const AddProduct = () => {
           <div className="form_wrapper">
             <label
               htmlFor="ManufactureName"
-              style={{ fontSize: "1.5rem", color: "black" }}
+              style={{ fontSize: "2.5rem", color: "black" }}
             >
               Manufacture Name
             </label>
@@ -169,7 +169,7 @@ const AddProduct = () => {
           <div className="form_wrapper">
             <label
               htmlFor="quantity"
-              style={{ fontSize: "1.5rem", color: "black" }}
+              style={{ fontSize: "2.5rem", color: "black" }}
             >
               Product Quantity
             </label>
@@ -185,7 +185,7 @@ const AddProduct = () => {
           <div className="form_wrapper">
             <label
               htmlFor="price"
-              style={{ fontSize: "1.5rem", color: "black" }}
+              style={{ fontSize: "2.5rem", color: "black" }}
             >
               Product Price
             </label>
@@ -201,25 +201,25 @@ const AddProduct = () => {
           <div className="form_wrapper">
             <label
               htmlFor="description"
-              style={{ fontSize: "1.5rem", color: "black" }}
+              style={{ fontSize: "2.5rem", color: "black" }}
             >
               Product Description
             </label>
             <textarea
               name="description"
               id="description"
-              cols="100"
+              cols="120"
               rows="5"
               value={formData.description}
               onChange={handleChange}
-              // className="form_input"
+             
               placeholder="Enter the description"
             ></textarea>
           </div>
           <div className="">
             <label
               htmlFor="image"
-              style={{ fontSize: "1.5rem", color: "black", marginRight: "8%" }}
+              style={{ fontSize: "2.5rem", color: "black", marginRight: "8%" }}
             >
               Product Image
             </label>
@@ -234,7 +234,7 @@ const AddProduct = () => {
 
           <div>
             {imageFormat && (
-              <p style={{ color: "red" }}>
+              <p style={{ color: "red",fontSize:"1.5rem" }}>
                 only PNG,JPG,JPEG images is accepted{" "}
               </p>
             )}
@@ -262,7 +262,7 @@ const AddProduct = () => {
             <button className="barcode_button" onClick={createBarcode}>
               Generate Bar code
             </button>
-            <p>(for Creating Barcode your Product should have Product ID)</p>
+            <p style={{fontSize:"1.5rem"}}>(for Creating Barcode your Product should have Product ID)</p>
             {showBarcode && <Barcode value={formData.id} />}
           </div>
         </div>
