@@ -28,7 +28,7 @@ const AddProduct = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+   
     const formDataWithImages = {
       ...formData,
       images: images.map((image) => image.dataURL),
@@ -56,10 +56,11 @@ const AddProduct = () => {
         description: "",
         quantity: "",
         Price: "",
-        images: [],
+        images: "",
       });
 
       ProductData.push(formData);
+     
    
     }
   };
@@ -70,19 +71,20 @@ const AddProduct = () => {
         const reader = new FileReader();
 
         reader.onload = (event) => {
+       
           setImages((prevImages) => [
             ...prevImages,
-            { dataURL: event.target.result, file },
-          ]);
-
+            { dataURL: event.target.result, file
+          }]);
+      
           setFormData((prevData) => ({
             ...prevData,
-            images: [...prevData.images, event.target.result],
+            images:  event.target.result,
           }));
         };
 
         reader.readAsDataURL(file);
-        console.log(images);
+        
       } else {
         setImageFormat(true);
       }

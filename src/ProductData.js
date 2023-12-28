@@ -1,7 +1,7 @@
 const ProductData=[
 	
 		{
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/10/H3DKZ-F.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/10/H3DKZ-F.webp?fit=600%2C600&ssl=1",
 			Productname: "H3DKZ-F Timer Relay Output || Make : Omron",
 			id: "100",
 			ManufactureName: "Jhon",
@@ -10,7 +10,7 @@ const ProductData=[
 			Price:"750"
 		  },
 		  {
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-32.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-32.webp?fit=600%2C600&ssl=1",
 			id: "101",
 			Productname:"Length Counter Meter with PNP/NPN Sensor Input I Make: Multispan LC-1046D",
 			ManufactureName:"bob",
@@ -21,7 +21,7 @@ const ProductData=[
 		  },
 
 		  {
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-23.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-23.webp?fit=600%2C600&ssl=1",
 			id: "102",
 			Productname:"Day-Night Delay Timer with Relay Output I Programmable Electronic Timer Switch 4 - Pin, 230 Volt AC",
 			ManufactureName:"Mahesh",
@@ -31,7 +31,7 @@ const ProductData=[
 		
 		},{
 
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-23.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-23.webp?fit=600%2C600&ssl=1",
 			id: "103",
 			Productname:"Multifunction Digital Timer 12-240AC/DC I Model: V0DDTS",
 			ManufactureName:"Virat",
@@ -41,7 +41,7 @@ const ProductData=[
 		}
 		,{
 
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-20.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-20.webp?fit=600%2C600&ssl=1",
 			id: "104",
 			Productname:"Cyclic timer with unequal ON-OFF time + Relay Output, 6 time ranges",
 			ManufactureName:"Jhon",
@@ -52,7 +52,7 @@ const ProductData=[
 		}
 		,{
 
-			image:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-22.webp?fit=600%2C600&ssl=1",
+			images:"https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-22.webp?fit=600%2C600&ssl=1",
 			id: "105",
 			Productname:"Cooling Temperature Controller 0-60 Degree I Make: SUBZERO",
 			ManufactureName:"Meg",

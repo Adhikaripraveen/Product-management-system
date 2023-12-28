@@ -34,7 +34,7 @@ const Home = () => {
      
 	  <tr id="table" key={product.id}  style={{ border: '1px solid #ddd', borderRadius: '8px', fontSize:"1.5rem" }}>
 	  <td>
-		<img src={product.image} alt={product.Productname} style={{ width: '50px', height: '50px' }} />
+		<img src={product.images} alt={product.Productname} style={{ width: '50px', height: '50px' }} />
 	  </td>
 	  <td>{product.Productname}</td>
 	  <td>{product.id}</td>
